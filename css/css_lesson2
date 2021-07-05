@@ -8,8 +8,32 @@
     background-color: yellowgreen;
   }
 
-@media (min-width:992px) {}
+@media (min-width:992px) {
+.c1,
+    .c2,
+    .c3 {
+      float: left;
+      width: 33.33%;
+    }
+}
 
-@media (min-width:768px and max-width:991px) {} 
+@media (min-width:768px and max-width:991px) {
+.c1, .c2 {
+      width: 50%;
+      float: left;
+      display: flex;
+    }
+ 
+    .c3 {
+      width: 100%;
+    }
+} 
 
-@media(max-width:767px){}
+@media(max-width:767px){
+.c1,
+    .c2,
+    .c3 {
+      float: left;
+      width: 100%;
+    }
+}
