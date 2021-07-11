@@ -1,39 +1,77 @@
-#box1 {
+body {
+    background-color: lightblue;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+  }
+
+#food1 {
     background-color: red;
   }
-  #box2 {
+#food2 {
     background-color: orange;
   }
-  #box3 {
+#food3 {
     background-color: yellow;
   }
 
-@media (min-width:992px) {
-.c1,
-    .c2,
-    .c3 {
-      float: left;
-      width: 33.33%;
+
+@media (min-width: 992px) {
+    .b1,
+    .b2,
+    .b3  {
+    width: 30%;    
+    float: left;
+  }
+}
+
+
+ 
+@media (min-width: 768px) and (max-width: 991px) {
+  .b1, .b2 {
+      width: 40%; 
+      flex-wrap: wrap;
+      float:left;
+    }
+ 
+    .b3 {
+      width: 100%;
+    }
+
+    
+}
+
+ 
+@media (max-width: 767px) {
+  .b1,
+  .b2,
+  .b3 {
+      width: 100%;
     }
 }
 
-@media (min-width:768px and max-width:991px) {
-.c1, .c2 {
-      width: 50%;
-      float: left;
-      display: flex;
-    }
- 
-    .c3 {
-      width: 100%;
-    }
-} 
+p {
+    padding: 10px;
+    position: relative;
+}
 
-@media(max-width:767px){
-.c1,
-    .c2,
-    .c3 {
-      float: left;
-      width: 100%;
-    }
+span {
+    font-size: 20px;
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    float: right;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+
+.boxarea{  
+    display: flex;
+    text-align: justify;
+    position: relative;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: cadetblue;
+  
 }
